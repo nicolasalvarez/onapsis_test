@@ -3,6 +3,11 @@ from pyramid.httpexceptions import HTTPBadRequest
 from onapsis_test.models import policies, Policy, modules, Module
 
 
+@view_config(route_name='home', renderer='json')
+def my_view(request):
+    return {'project': 'onapsis_test'}
+
+
 @view_config(route_name='post_policy', request_method="POST", renderer='json')
 def post_policy(request):
     json_policy = request.json_body
