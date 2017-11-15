@@ -5,7 +5,7 @@ Installation
 ------------
 Installing the project:
 * $ mkvirtualenv onapsis_test
-* (onapsis_test)$ pip install -r requirements.txt
+* (onapsis_test)$ pip install -r requirements_dev.txt
 * (onapsis_test)$ python setup.py develop
 
 Execution
@@ -27,3 +27,5 @@ A script with some requests:
 
 Testing
 -------
+Running tests:
+* (onapsis_test)$ pytest onapsis_test/tests.py
