@@ -28,4 +28,7 @@ A script with some requests:
 Testing
 -------
 Running tests:
-* (onapsis_test)$ pytest onapsis_test/tests.py
+* Make sure you have the app running locally.
+* `(onapsis_test)$ pserve development.ini`
+- From another terminal run `pytest tests/`
+- or to run individual tests: `pytest tests/test_functional_tests.py::test_return_module_ebs`
